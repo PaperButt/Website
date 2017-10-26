@@ -131,8 +131,8 @@ a {
     display: block;
   }
   #nav_menu li a {
-      letter-spacing: 2px;
-      text-align: center;
+    letter-spacing: 2px;
+    text-align: center;
     font-size: 18px;
     display: block;
     padding: 12px 20px;
@@ -145,14 +145,13 @@ a {
 
 @media screen and (max-width: 960px) {
   #nav_bar {
-      height: auto;
+    height: auto;
     box-shadow: var(--color-reg-black) 0px 0px 10px;
     z-index: 1;
     font-family: var(--font-nav-font);
     background-color: var(--color-dark-coral);
     width: 100%;
   }
-  
   #nav_menu li {
     margin: 5px 10px 0 10px;
     list-style-type: none;
@@ -180,14 +179,14 @@ a {
   color: var(--color-reg-black);
 }
 
-#page_title_container_nav{
-    margin: auto;
+#page_title_container_nav {
+  margin: auto;
 }
 
-#page_title_container_nav h1{
-    position: relative;
-    left: 50%;
-    transform: translateX(-50%);
+#page_title_container_nav h1 {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
   color: var(--color-reg-black);
   text-align: center;
   font-family: var(--font-title);
@@ -196,38 +195,38 @@ a {
 
 /* END OF NAVIGATION BAR*/
 
-#main p{
-    color: var(--color-pale-gold);
-    font-size: var(--font-size-text);
+#main p {
+  color: var(--color-pale-gold);
+  font-size: var(--font-size-text);
 }
 
-#main h2{
-    color: var(--color-pale-gold);
-    font-size: var(--font-size-heading);
-    font-family: var(--font-title);
-    letter-spacing: 10px;
-    line-height: 50px;
+#main h2 {
+  color: var(--color-pale-gold);
+  font-size: var(--font-size-heading);
+  font-family: var(--font-title);
+  letter-spacing: 10px;
+  line-height: 50px;
 }
 
-@media screen and (max-width: 960px){
-    #content_container {
-        top: 200px;
-    }
+@media screen and (max-width: 960px) {
+  #content_container {
+    top: 200px;
+  }
 }
 
-@media screen and (min-width: 960px){
-    #content_container {
-        top: 50px;
-    }
+@media screen and (min-width: 960px) {
+  #content_container {
+    top: 50px;
+  }
 }
 
-#content_container{
-    position: relative;
-    padding: 20px;
+#content_container {
+  position: relative;
+  padding: 20px;
 }
 
-#content_container hr{
-   border-color: var(--color-pale-gold);
+#content_container hr {
+  border-color: var(--color-pale-gold);
 }
 
 footer {
