@@ -1,5 +1,3 @@
 # Website
-Just a lil' meme
 
-
-Hey I'm just a lil' meme tryinna startoff here
+Only commit if you've completed a goal of fixed a wave of issues
