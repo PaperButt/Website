@@ -1,0 +1,247 @@
+/* Defined CSS Variables so the code is easier to read*/
+
+:root {
+  --color-reg-black: #000000;
+  /*#000000 Registration Black - Background*/
+  --color-dark-coral: #CF5C36;
+  /*#CF5C36 Dark Coral - Nav Background*/
+  --color-plat: #EEE5E9;
+  /*#EEE5E9 Platinum - Description Background*/
+  --color-trolley-grey: #7C7C7C;
+  /*#7C7C7C Trolley Grey - Dark Text*/
+  --color-pale-gold: #EFC88B;
+  /*#EFC88B Pale Gold - Light Text*/
+  --color-big-title1: linear-gradient(to bottom, #CF5C36, #000000);
+  /*#EEE5E9 to #EFC88B Plat to Gold Grad - Big Title*/
+  --color-big-title2: linear-gradient(to bottom, #000000, #CF5C36);
+  /*#EEE5E9 to #EFC88B Gold to Plat Grad - Big Title*/
+  --font-nav-font: "Motiva Sans", Sans-serif;
+  /*"Motiva Sans", Sans-serif - Nav Font*/
+  --font-text: proxima-nova, "Helvetica Neue", Helvetica, sans-serif;
+  /*proxima-nova, "Helvetica Neue", Helvetica, sans-serif - Text and Small Headings*/
+  --font-title: silkscreennormal;
+  /*silkscreennormal - Title Font*/
+}
+
+@media screen and (min-width:960px) {
+  :root {
+    --font-size-text: 30px;
+    --font-size-heading: 40px;
+  }
+}
+
+@media screen and (max-width:960px) {
+  :root {
+    --font-size-text: 20px;
+    --font-size-heading: 30px;
+  }
+}
+
+/* End of CSS Variables*/
+
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+body {
+  background-color: var(--color-reg-black);
+  font-family: var(--font-text);
+}
+
+a {
+  color: var(--color-plat);
+  text-decoration: none;
+}
+
+/* WRAPPED ELEMENTS*/
+
+@media screen and (max-width: 960px) {
+  .wrapped40 {
+    width: 80%;
+    margin: auto;
+  }
+  .wrapped80 {
+    width: 90%;
+    margin: auto;
+  }
+  .wrapped60 {
+    width: 85%;
+    margin: auto;
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .wrapped40 {
+    width: 55%;
+    margin: auto;
+  }
+  .wrapped80 {
+    width: 90%;
+    margin: auto;
+  }
+  .wrapped60 {
+    width: 75%;
+    margin: auto;
+  }
+}
+
+@media screen and (min-width: 1080px) {
+  .wrapped40 {
+    width: 40%;
+    margin: auto;
+  }
+  .wrapped80 {
+    width: 80%;
+    margin: auto;
+  }
+  .wrapped60 {
+    width: 60%;
+    margin: auto;
+  }
+}
+
+/* END OF WRAPPED ELEMENTS*/
+
+.really_fixed {
+  position: fixed;
+}
+
+/* NAVIGATION BAR */
+
+@media screen and (min-width: 960px) {
+  #nav_bar {
+    box-shadow: var(--color-reg-black) 0px 0px 10px;
+    z-index: 1;
+    font-family: var(--font-nav-font);
+    background-color: var(--color-dark-coral);
+    height: 50px;
+    width: 100%;
+  }
+  #left_side {
+    float: left;
+  }
+  #right_side {
+    float: right;
+  }
+  #nav_menu li {
+    margin: 5px 10px 0 10px;
+    float: left;
+    list-style-type: none;
+    display: block;
+  }
+  #nav_menu li a {
+      letter-spacing: 2px;
+      text-align: center;
+    font-size: 18px;
+    display: block;
+    padding: 12px 20px;
+    min-width: 100px;
+  }
+  #nav_menu li a:hover {
+    box-shadow: var(--color-reg-black) 0px 0px 5px;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  #nav_bar {
+      height: auto;
+    box-shadow: var(--color-reg-black) 0px 0px 10px;
+    z-index: 1;
+    font-family: var(--font-nav-font);
+    background-color: var(--color-dark-coral);
+    width: 100%;
+  }
+  
+  #nav_menu li {
+    margin: 5px 10px 0 10px;
+    list-style-type: none;
+    display: block;
+  }
+  #nav_menu li a {
+    letter-spacing: 2px;
+    font-size: 12px;
+    font-weight: bold;
+    display: block;
+    padding: 6px 10px;
+  }
+  #nav_menu li a:hover {
+    box-shadow: var(--color-reg-black) 0px 0px 5px;
+  }
+}
+
+.active_page a {
+  color: var(--color-dark-coral);
+  background-color: var(--color-reg-black);
+}
+
+.not_active_page a {
+  background-color: var(--color-dark-coral);
+  color: var(--color-reg-black);
+}
+
+#page_title_container_nav{
+    margin: auto;
+}
+
+#page_title_container_nav h1{
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+  color: var(--color-reg-black);
+  text-align: center;
+  font-family: var(--font-title);
+  padding: 10px 0;
+}
+
+/* END OF NAVIGATION BAR*/
+
+#main p{
+    color: var(--color-pale-gold);
+    font-size: var(--font-size-text);
+}
+
+#main h2{
+    color: var(--color-pale-gold);
+    font-size: var(--font-size-heading);
+    font-family: var(--font-title);
+    letter-spacing: 10px;
+    line-height: 50px;
+}
+
+@media screen and (max-width: 960px){
+    #content_container {
+        top: 200px;
+    }
+}
+
+@media screen and (min-width: 960px){
+    #content_container {
+        top: 50px;
+    }
+}
+
+#content_container{
+    position: relative;
+    padding: 20px;
+}
+
+#content_container hr{
+   border-color: var(--color-pale-gold);
+}
+
+footer {
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  height: 50px;
+  background-color: var(--color-dark-coral);
+}
+
+footer p {
+  font-size: 8px;
+  text-align: center;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
