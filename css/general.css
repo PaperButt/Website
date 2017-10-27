@@ -23,8 +23,11 @@
   /*silkscreennormal - Title Font*/
 }
 
+/* The @media checks for the window width to make, in this case, the text smaller or bigger*/
+
 @media screen and (min-width:960px) {
   :root {
+    /* The text size will be bigger if the window size is well, bigger*/
     --font-size-text: 30px;
     --font-size-heading: 40px;
   }
@@ -38,6 +41,8 @@
 }
 
 /* End of CSS Variables*/
+
+/* These rules apply to every element in the HTML unless they say otherwise*/
 
 * {
   padding: 0px;
@@ -54,7 +59,11 @@ a {
   text-decoration: none;
 }
 
+/* END OF THE GENERAL RULES*/
+
 /* WRAPPED ELEMENTS*/
+
+/* Here is a way for all the wrapped content to resize if we resize the window so everything fits in it until a certain point*/
 
 @media screen and (max-width: 960px) {
   .wrapped40 {
@@ -103,11 +112,15 @@ a {
 
 /* END OF WRAPPED ELEMENTS*/
 
+/* The fixed elements like the nav bar are really fixed on the brower so when you scroll*/
+
 .really_fixed {
   position: fixed;
 }
 
 /* NAVIGATION BAR */
+
+/* The Navigation bar also has a @media because I wanted it to also fit on small screens*/
 
 @media screen and (min-width: 960px) {
   #nav_bar {
@@ -143,6 +156,8 @@ a {
   }
 }
 
+/* The smaller the window gets (to a certain point) the smaller the text gets and the bar as well */
+
 @media screen and (max-width: 960px) {
   #nav_bar {
     height: auto;
@@ -169,6 +184,8 @@ a {
   }
 }
 
+/* The page in which we are on should be hightlighted and diferent from others so we know what page we are on*/
+
 .active_page a {
   color: var(--color-dark-coral);
   background-color: var(--color-reg-black);
@@ -178,6 +195,8 @@ a {
   background-color: var(--color-dark-coral);
   color: var(--color-reg-black);
 }
+
+/* In Pages besides the Home Page there is a title inside the navigation bar with the Raster Grapchis Title so we know we are on the right website */
 
 #page_title_container_nav {
   margin: auto;
@@ -195,6 +214,8 @@ a {
 
 /* END OF NAVIGATION BAR*/
 
+/* Main Content Properties*/
+
 #main p {
   color: var(--color-pale-gold);
   font-size: var(--font-size-text);
@@ -207,6 +228,8 @@ a {
   letter-spacing: 10px;
   line-height: 50px;
 }
+
+/* Again @media is used but this time is to acount for the transformations of the Nav Menu and move the content down so we can still see it without the Navgiation Bar over it*/
 
 @media screen and (max-width: 960px) {
   #content_container {
@@ -228,6 +251,10 @@ a {
 #content_container hr {
   border-color: var(--color-pale-gold);
 }
+
+/* End of Main Content Properties*/
+
+/* Footer */
 
 footer {
   position: absolute;
