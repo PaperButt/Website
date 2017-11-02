@@ -1,41 +1,60 @@
-﻿<!doctype html>
+<!doctype html>
 
 <html lang="en">
+
+<!-- Last Edit  -->
+
+<!-- 27Oct17 Pedro Pires (PaperButt) - Just added all the comenting  -->
 
 <head>
 	<title>Raster Graphics</title>
 	<meta charset="utf-8">
+	<!-- The CSS for only the home page instead of general.css because of all the transformations and special settings for more "Fancy" Stuff -->
 	<link rel="stylesheet" href="css/main.css">
+	<!-- The fonts.css needs to be loaded for the custom font to be used for the title -->
 	<link rel="stylesheet" href="css/fonts.css">
+	<!-- The jQuery needs to be loaded before the javascript so it is usable inside the javascript.js -->
 	<script src="js/jquery-3.2.1.min.js"></script>
+	<!-- Home Page javascript for all the "fancy" animations -->
 	<script src="js/javascript_main.js"></script>
 </head>
 
 <body onload="on_load()">
-	<div>
-	</div>
+	<!-- Start of the Top Navigation Bar that contains the Navigation Menu -->
 	<div id="nav_bar" class="really_fixed">
+		<!-- Start of the Navigation Menu with all the hyperlinks to all the other webpages -->
 		<div id="nav_menu" class="wrapped80">
+			<!-- The menu that floats on the left side of the bar -->
 			<div id="left_side">
 				<ul>
+					<!-- The hyperlink which corresponds to the page we are on should be marked difrently than others -->
 					<li class="active_page"><a href="#">Home</a></li>
 					<li class="not_active_page"><a href="#">Our Research</a></li>
 				</ul>
 			</div>
+			<!-- End of left floated menu -->
+			<!-- The menu that floats on the right side of the bar -->
 			<div id="right_side">
 				<ul>
 					<li class="not_active_page"><a href="#">About Us</a></li>
 					<li class="not_active_page"><a href="#">Have a Question?</a></li>
 				</ul>
 			</div>
+			<!-- End of right floated menu -->
 		</div>
 	</div>
+	<!-- End of the Top Nagiation Bar Element -->
+	<!-- Start of the Main container where all the content (text and pictures) will go -->
 	<div id="main">
+		<!-- Start of the "amazing" title of the page -->
 		<div id="page_title_container">
 			<img src="images/MarioBackground1-1.png" />
-			<h1 id="page_title">Raster Graphics</h1>
+			<h1 id="page_title">RastEr Graphics</h1>
 		</div>
+		<!-- End of the title of the page -->
+		<!-- Start of the content of the page -->
 		<div id=content_container>
+			<!-- The content is divided into little containers with individual design on the CSS and they all wrapped in the wrapper40 (More Description in the CSS) -->
 			<div id="content01">
 				<p class="wrapped40">
 					In computer graphics, a raster graphics or bitmap image is a dot matrix data structure, representing a generally rectangular grid of pixels, or points of color, viewable via a monitor, paper, or other display medium. Raster images are stored in image
@@ -56,10 +75,14 @@
 				</p>
 			</div>
 		</div>
+		<!-- End of the content of the page -->
 	</div>
+	<!-- End of the Main container -->
+	<!-- Footer (nothing to declare) -->
 	<footer>
 		<p class="wrapped80">Project made by Pedro Pires for Web Development Assignment</p>
 	</footer>
+	<!-- End of the footer -->
 </body>
 
 </html>

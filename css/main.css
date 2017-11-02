@@ -23,7 +23,10 @@
   /*silkscreennormal - Title Font*/
 }
 
+/* The @media checks for the window width to make, in this case, the text smaller or bigger*/
+
 @media screen and (min-width:960px) {
+  /* The text size will be bigger if the window size is well, bigger*/
   :root {
     --font-size-text: 30px;
   }
@@ -36,6 +39,8 @@
 }
 
 /* End of CSS Variables*/
+
+/* These rules apply to every element in the HTML unless they say otherwise*/
 
 * {
   padding: 0px;
@@ -52,7 +57,11 @@ a {
   text-decoration: none;
 }
 
+/* END OF THE GENERAL RULES*/
+
 /* WRAPPED ELEMENTS*/
+
+/* Here is a way for all the wrapped content to resize if we resize the window so everything fits in it until a certain point*/
 
 @media screen and (max-width: 960px) {
   .wrapped40 {
@@ -101,11 +110,15 @@ a {
 
 /* END OF WRAPPED ELEMENTS*/
 
+/* The fixed elements like the nav bar are really fixed on the brower so when you scroll*/
+
 .really_fixed {
   position: fixed;
 }
 
 /* NAVIGATION BAR */
+
+/* The Navigation bar also has a @media because I wanted it to also fit on small screens*/
 
 @media screen and (min-width: 960px) {
   #nav_bar {
@@ -129,8 +142,8 @@ a {
     display: inline;
   }
   #nav_menu li a {
-      letter-spacing: 2px;
-      text-align: center;
+    letter-spacing: 2px;
+    text-align: center;
     font-size: 18px;
     display: block;
     padding: 12px 20px;
@@ -140,6 +153,8 @@ a {
     box-shadow: var(--color-reg-black) 0px 0px 5px;
   }
 }
+
+/* The smaller the window gets (to a certain point) the smaller the text gets and the bar as well */
 
 @media screen and (max-width: 960px) {
   #nav_bar {
@@ -172,6 +187,8 @@ a {
   }
 }
 
+/* The page in which we are on should be hightlighted and diferent from others so we know what page we are on*/
+
 .active_page a {
   color: var(--color-dark-coral);
   background-color: var(--color-reg-black);
@@ -182,12 +199,14 @@ a {
   color: var(--color-reg-black);
 }
 
-#page_title_container_nav{
+/* In Pages besides the Home Page there is a title inside the navigation bar with the Raster Grapchis Title so we know we are on the right website */
+
+#page_title_container_nav {
   width: auto;
   margin: auto;
 }
 
-#page_title_container_nav h1{
+#page_title_container_nav h1 {
   text-align: center;
   font-family: var(--font-title);
   background-image: var(--color-bit-title2);
@@ -196,6 +215,8 @@ a {
 }
 
 /* END OF NAVIGATION BAR*/
+
+/* Main Content Properties*/
 
 #main {}
 
@@ -283,6 +304,10 @@ a {
   color: var(--color-pale-gold);
   padding: 30px 0;
 }
+
+/* End of Main Content Properties*/
+
+/* Footer */
 
 footer {
   width: 100%;
