@@ -1,0 +1,87 @@
+<!doctype html>
+
+<html lang="en">
+
+<!-- Last Edit  -->
+
+<!-- 27Oct17 Pedro Pires (PaperButt) - Just added all the comenting  -->
+
+<head>
+	<title>Raster Graphics</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="css/root.css">
+	<!-- The CSS for only the home page instead of general.css because of all the transformations and special settings for more "Fancy" Stuff -->
+	<link rel="stylesheet" href="css/general.css">
+	<!-- The fonts.css needs to be loaded for the custom font to be used for the title -->
+	<link rel="stylesheet" href="css/fonts.css">
+	<!-- The jQuery needs to be loaded before the javascript so it is usable inside the javascript.js -->
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<!-- Home Page javascript for all the "fancy" animations -->
+	<script src="js/javascript.js"></script>
+</head>
+
+<body onload="onload()">
+	<div id="darkness" class="really_fixed"></div>
+	<!-- Start of the Top Navigation Bar that contains the Navigation Menu -->
+	<div id="nav_bar" class="really_fixed">
+		<div id="left_side">
+			<a id="nav_ball">
+			<svg height="50px" width="50px">
+				<circle cx="50%" cy="50%" r="40%" stroke="var(--color-light-text)" stroke-width="20%" fill="var(--color-dark-text)" />
+				<circle cx="50%" cy="75%" r="10%" stroke="var(--color-light-text)" stroke-width="10%" fill="var(--color-dark-text)" />
+		  </svg>
+	  </a>
+		</div>
+		<div id="right_side">
+			<a id="nav_title" href="#">Raster Graphics</a>
+			<ul id="nav_buttons">
+				<li id="nav_button1" style="top: -100%"><a href="index.html">Home</a></li>
+				<li id="nav_button2" style="top: -100%"><a href="#">Our Research</a></li>
+				<li id="nav_button3" style="top: -100%"><a href="#">About Us</a></li>
+				<li id="nav_button4" style="top: -100%"><a href="#">Have a Question?</a></li>
+			</ul>
+		</div>
+	</div>
+	<!-- End of the Top Navigation Bar Element -->
+	<!-- Start of the Main container where all the content (text and pictures) will go -->
+	<div id="main">
+		<div id="page_title_container">
+			<div>
+				<h1 id="page_title">Raster<br>Graphics</h1>
+				<h2>Pixelated<br>Graphics and<br>their impact in<br>today's video<br>game culture</h2>
+			</div>
+		</div>
+		<hr class="wrapped80">
+		<div id="content_container" class="wrapped60">
+			<p>80's arcade style graphics are the "new" hip way to design video game art and it is gaining popularity in the past few years.</p>
+			<div class="wrapped80">
+				<img class="content_image" src="images/MarioBackground1-1.jpg" class="wrapped80" alt="Super Mario Bros">
+				<p class="content_image_subtitle">Super Mario Bros</p>
+			</div>
+			<p>Using sprites and low resolution graphics, pixel art in past were comon and all we had, low-powered hardware could only render that much detal.</p>
+			<!--  Even then characters like Super Mario or Link (from Legend of Zelda) were easly recognisable, the red plumber hat or the green pixie hat were iconic elements in the character's look making them pop out from the rest of the game -->
+			<div class="wrapped80">
+				<img class="content_image" src="images/MarioOdyssey01.jpg" class="wrapped80" alt="Super Mario Odyssey">
+				<!-- Taken from Nintendo Website-->
+				<p class="content_image_subtitle">Super Mario Odyssey</p>
+			</div>
+			<p>Nowadays we have super-powered machines that ovecome these others by over 2666 times (when comparing the nintendo switch and the nintendo snes) that can render almost anything.</p>
+			<div class="wrapped80">
+				<img class="content_image" src="images/MarioOdyssey02.jpg" alt="Super Mario Odyssey (Pipes)">
+				<p class="content_image_subtitle"> Super Mario Odyssey (8-bit Pipes)</p>
+			</div>
+			<p>So why are pixel graphics gathering so much atention?</p>
+		</div>
+		<p class="three_dots">...</p>
+		<hr class="wrapped80">
+		<p style="text-align:center; color:var(--color-light-text); font-size: var(--font-size-nav-quote)">Can't find the Navigation Bar? Click <a id="nav_not_shown_thing_button">here</a></p>
+	</div>
+	<!-- End of the Main container -->
+	<!-- Footer (nothing to declare) -->
+	<footer>
+		<p class="wrapped80">Project made by Pedro Pires for Web Development Assignment</p>
+	</footer>
+	<!-- End of the footer -->
+</body>
+
+</html>

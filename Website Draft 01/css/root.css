@@ -1,0 +1,24 @@
+/* Defined CSS Variables so the code is easier to read*/
+
+:root {
+  --color-background: #3E000C;
+  /*#000000 Registration Black - Background*/
+  --color-nav-background: #FB4B4E;
+  /*#CF5C36 Dark Coral - Nav Background*/
+  --color-descrip-background: #F22B29;
+  /*#EEE5E9 Platinum - Description Background*/
+  --color-dark-text: #140F2D;
+  /*#7C7C7C Trolley Grey - Dark Text*/
+  --color-light-text: #F49D37;
+  /*#EFC88B Pale Gold - Light Text*/
+  --color-big-title1: linear-gradient(to bottom, var(--color-nav-background), #000000);
+  /*#EEE5E9 to #EFC88B Plat to Gold Grad - Big Title*/
+  --color-big-title2: linear-gradient(to bottom, #000000, var(--color-nav-background));
+  /*#EEE5E9 to #EFC88B Gold to Plat Grad - Big Title*/
+  --font-nav-font: "Motiva Sans", Sans-serif;
+  /*"Motiva Sans", Sans-serif - Nav Font*/
+  --font-text: proxima-nova, "Helvetica Neue", Helvetica, sans-serif;
+  /*proxima-nova, "Helvetica Neue", Helvetica, sans-serif - Text and Small Headings*/
+  --font-title: silkscreennormal;
+  /*silkscreennormal - Title Font*/
+}

@@ -1,0 +1,84 @@
+<!doctype html>
+
+<html lang="en">
+
+<!-- Last Edit  -->
+
+<!-- 27Oct17 Pedro Pires (PaperButt) - Just added all the comenting  -->
+
+<head>
+	<title>Raster Graphics</title>
+	<meta charset="utf-8">
+	<!-- The CSS for only the home page instead of general.css because of all the transformations and special settings for more "Fancy" Stuff -->
+	<link rel="stylesheet" href="../css/root.css">
+	<link rel="stylesheet" href="../css/general.css">
+	<!-- The fonts.css needs to be loaded for the custom font to be used for the title -->
+	<link rel="stylesheet" href="../css/fonts.css">
+	<!-- The jQuery needs to be loaded before the javascript so it is usable inside the javascript.js -->
+	<script src="../js/jquery-3.2.1.min.js"></script>
+	<!-- Home Page javascript for all the "fancy" animations -->
+	<script src="../js/javascript.js"></script>
+	<script src="https://unpkg.com/jsnes/dist/jsnes.min.js"></script>
+</head>
+
+<body>
+	<!-- Start of the Top Navigation Bar that contains both the tile of the page and the Navigation Menu -->
+	<div id="nav_bar" class="really_fixed">
+		<!-- Start of the Navigation Menu with all the hyperlinks to all the other webpages -->
+		<div id="nav_menu" class="wrapped80">
+			<ul>
+				<!-- The menu that floats on the left side of the bar -->
+				<div id="left_side">
+					<li class="not_active_page"><a href="../index.html">Home</a></li>
+					<!-- The hyperlink which corresponds to the page we are on should be marked difrently than others -->
+					<li class="active_page"><a href="../ourresearch.html">Our Research</a></li>
+				</div>
+				<!-- End of left floated menu -->
+				<!-- The menu that floats on the right side of the bar -->
+				<div id="right_side">
+					<li class="not_active_page"><a href="../aboutus.html">About Us</a></li>
+					<li class="not_active_page"><a href="../haveaquestion.html">Have a Question?</a></li>
+				</div>
+				<!-- End of right floated menu -->
+			</ul>
+		</div>
+		<!-- End of the Navigation Menu Element -->
+		<!-- Start of the title of the page -->
+		<div id="page_title_container_nav" class="wrapped40">
+			<h1 id="page_title_nav">Raster Graphics</h1>
+		</div>
+		<!-- End of the title of the page -->
+	</div>
+	<!-- Start of the Main container where all the content (text and pictures) will go -->
+	<div id="main">
+		<div id="content_container" class="wrapped60">
+			<h2><a href="https://jsnes.fir.sh/" style="color: var(--color-pale-gold)">JSNES</a></h2>
+			<hr>
+			<br>
+			<p class="wrapped80">
+				Back in 2009 Ben Fisherman wanted to create a NES emulator that required no Flash or any downloads.
+			</p>
+			<div class="wrapped60">
+				<p class="quote" style="padding:10px 0">
+					JSNES A JavaScript NES emulator. By Ben Firshman. Source on GitHub.</p>
+			</div>
+			<p class="wrapped80">
+				So he created a JavaScript NES emulator where you could run NES games on a browser without any many issues.
+			</p>
+			<iframe src="https://jsnes.fir.sh/run/Super%20Mario%20Bros.%20(JU)%20(PRG0)%20%5B!%5D.nes" width="600" height="600">
+	  		<p>Your browser does not support iframes.</p>
+			</iframe>
+			<p class="wrapped80">All credit aside you can see how games looked before.</p>
+			<br>
+			<p class="wrapped80">Games like "Super Mario Bros." and "Legend of Zelda" gave atention to the gaming industry and all they needed was a story and an objective.</p>
+		</div>
+	</div>
+	<!-- End of the Main container -->
+	<!-- Footer (nothing to declare) -->
+	<footer>
+		<p class="wrapped80">Project made by Pedro Pires for Web Development Assignment</p>
+	</footer>
+	<!-- End of the footer -->
+</body>
+
+</html>

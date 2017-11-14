@@ -1,0 +1,222 @@
+/* These rules apply to every element in the HTML unless they say otherwise*/
+
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+body {
+  background-color: var(--color-background);
+  font-family: var(--font-text);
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  color: var(--color-descrip-background);
+  text-decoration: none;
+}
+
+/* END OF THE GENERAL RULES*/
+
+/* The fixed elements like the nav bar are really fixed on the browser so when you scroll*/
+
+.really_fixed {
+  position: fixed;
+}
+
+#darkness {
+  pointer-events: none;
+  z-index: 1;
+  opacity: 0;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  transition: opacity 0.3s ease-in-out;
+}
+
+/* NAVIGATION BAR */
+
+#nav_bar {
+  z-index: 1;
+  top: 20%;
+  left: 10px;
+  transform-origin: 25px 25px;
+  transform: rotate(90deg);
+  transition: transform 0.3s;
+}
+
+#left_side {
+  float: left;
+}
+
+#right_side {
+  float: right;
+}
+
+#nav_ball {
+  transition: transform 0.3s ease-out;
+  transform: scale(1);
+}
+
+#nav_ball:hover {
+  cursor: pointer;
+}
+
+#nav_ball svg {
+  transition: transform 0.3s ease-out;
+  transform: scale(1);
+}
+
+a#nav_title {
+  z-index: 2;
+  vertical-align: middle;
+  color: var(--color-dark-text);
+  font-weight: bold;
+  font-size: var(--font-size-nav-title);
+  font-family: var(--font-title);
+  letter-spacing: 2px;
+  border-radius: 5px;
+  background-color: var(--color-light-text);
+  padding: 10px 10px;
+  display: block;
+  cursor: pointer;
+  transition: transform 0.1s ease 0s;
+  margin: 0 0 0 10px;
+}
+
+ul#nav_buttons {
+  width: 90%;
+  padding: 10px;
+  float: right;
+  display: block;
+  overflow: hidden;
+  position: relative;
+  height: 150px;
+}
+
+#nav_button1, #nav_button2, #nav_button3, #nav_button4 {
+  visibility: hidden;
+  margin-bottom: 5px;
+  list-style-type: none;
+  display: block;
+  top: -100%;
+  transition: top 0.5s ease-out;
+  position: absolute;
+  width: 90%;
+}
+
+#nav_buttons li a {
+  font-family: var(--font-nav-text);
+  font-size: var(--font-size-nav-text);
+  color: var(--color-light-text);
+  display: block;
+  padding: 5px 10px;
+  background-color: var(--color-dark-text);
+  border-radius: 5px;
+}
+
+#nav_title:hover, #nav_buttons li a:hover {
+  transform: translateY(-1px);
+  box-shadow: var(--color-dark-text) 0px 0px 5px;
+}
+
+#nav_title:active, #nav_buttons li a:active {
+  transform: translateY(1px) rotate(1deg);
+}
+
+/* END OF NAVIGATION BAR*/
+
+/* Main Content Properties*/
+
+#main {}
+
+#page_title_container {
+  position: relative;
+}
+
+#page_title_container div {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+h1#page_title {
+  margin: auto;
+  text-align: center;
+  font-size: var(--font-size-title);
+  font-family: var(--font-title);
+  color: var(--color-light-text);
+}
+
+#page_title_container h2 {
+  text-align: center;
+  color: var(--color-light-text);
+  font-family: var(--font-title);
+  font-size: var(--font-size-sub-title);
+}
+
+#main hr {
+  border: var(--color-light-text) 2px solid;
+  border-radius: 5px;
+  margin: 10px auto;
+}
+
+#content_container p {
+  font-size: var(--font-size-text);
+  font-family: var(--font-text);
+  color: var(--color-light-text);
+  text-align: justify;
+}
+
+img.content_image {
+  width: 100%;
+  margin-top: 50px;
+  border: var(--color-light-text) 2px solid;
+  border-radius: 5px;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+p.content_image_subtitle {
+  margin-bottom: 50px;
+  font-size: var(--font-size-quote) !important;
+  text-align: right !important;
+}
+
+.three_dots {
+  text-align: center;
+  color: var(--color-light-text);
+  font-family: var(--font-title);
+  font-size: var(--font-size-sub-title);
+  letter-spacing: 2px;
+}
+
+/* End of Main Content Properties*/
+
+#nav_not_shown_thing_button {
+  cursor: pointer;
+}
+
+/* Footer */
+
+footer {
+  margin: 50px 0 0 0;
+  width: 100%;
+  height: 50px;
+}
+
+footer p {
+  color: var(--color-light-text);
+  border-radius: 1px;
+  padding: 2px;
+  font-size: 10px;
+  text-align: center;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/* End of Footer Properties*/
