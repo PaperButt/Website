@@ -33,6 +33,8 @@
     --font-size-heading: 40px;
     --font-size-nav-title: 35px;
     --font-size-nav-text: 20px;
+    --font-size-title: 150px;
+    --font-size-sub-title: 80px;
   }
 }
 
@@ -43,6 +45,8 @@
     --font-size-heading: 30px;
     --font-size-nav-title: 30px;
     --font-size-nav-text: 15px;
+    --font-size-title: 100px;
+    --font-size-sub-title: 50px;
   }
 }
 

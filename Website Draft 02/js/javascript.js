@@ -1,7 +1,10 @@
 var nav_is_shown = false;
+var window_height = $(window).height();
+console.log(window_height);
 
 function onload() {
   console.log("Javascript Read");
+  $("#page_title_container").css("height", window_height + "px");
 }
 
 $(function() {
@@ -10,11 +13,9 @@ $(function() {
     switch (nav_is_shown) {
       case false:
         $("#darkness").css("opacity", "0.6");
-          $("#darkness").css("pointer-events", "all");
+        $("#darkness").css("pointer-events", "all");
         $("#nav_button1, #nav_button2, #nav_button3, #nav_button4").css("visibility", "visible");
-        $("#nav_button1, #nav_button2, #nav_button3, #nav_button4").css("opacity", "1");
-        $("#nav_ball").css("transform", "scale(-1)");
-        $("#nav_ball svg").css("transform", "scale(-1)");
+        $("#nav_ball svg").css("transform", "rotate(-" + 90 + "deg)");
         $("#nav_bar").css("transform", "rotate(-5deg)");
         setTimeout(function() {
           $("li#nav_button1").css("top", 10 + "px");
@@ -37,7 +38,7 @@ $(function() {
         break;
       case true:
         $("#darkness").css("opacity", "0");
-          $("#darkness").css("pointer-events", "none");
+        $("#darkness").css("pointer-events", "none");
         setTimeout(function() {
           $("li#nav_button1").css("top", "-100%");
           $("li#nav_button2").css("top", "-100%");
@@ -49,9 +50,7 @@ $(function() {
         }, 100);
         setTimeout(function() {
           $("#nav_button1, #nav_button2, #nav_button3, #nav_button4").css("visibility", "hidden");
-          $("#nav_button1, #nav_button2, #nav_button3, #nav_button4").css("opacity", "0");
-          $("#nav_ball").css("transform", "scale(1)");
-          $("#nav_ball svg").css("transform", "scale(1)");
+          $("#nav_ball svg").css("transform", "rotate(" + 0 + "deg)");
           $("#nav_bar").css("transform", "rotate(95deg)");
         }, 300);
         setTimeout(function() {
