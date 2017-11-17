@@ -33,7 +33,6 @@ $(function() {
           console.log(2);
           $("#nav_bar").css("transform", "rotate(0deg)");
         }, 300);
-        // $("#nav_bar").delay(300).css("transform", "rotate(0deg)");
         nav_is_shown = true;
         break;
       case true:
@@ -56,7 +55,7 @@ $(function() {
         setTimeout(function() {
           console.log(2);
           $("#nav_bar").css("transform", "rotate(90deg)");
-        }, 300);
+        }, 600);
         nav_is_shown = false;
         break;
     }

@@ -106,7 +106,7 @@ ul#nav_buttons {
   width: 90%;
 }
 
-#nav_buttons li a {
+#nav_button1 a, #nav_button2 a, #nav_button3 a, #nav_button4 a {
   font-family: var(--font-nav-text);
   font-size: var(--font-size-nav-text);
   color: var(--color-light-text);
@@ -114,6 +114,7 @@ ul#nav_buttons {
   padding: 5px 10px;
   background-color: var(--color-dark-text);
   border-radius: 5px;
+  height: auto;
 }
 
 #nav_title:hover, #nav_buttons li a:hover {
@@ -123,6 +124,56 @@ ul#nav_buttons {
 
 #nav_title:active, #nav_buttons li a:active {
   transform: translateY(1px) rotate(1deg);
+}
+
+#ourresearch {
+  height: 25%;
+  width: 100%;
+}
+
+a.nav_submenu_button {
+  font-family: var(--font-nav-text);
+  font-size: var(--font-size-nav-text);
+  color: var(--color-light-text);
+  display: inline-block;
+  background-color: #000000 !important;
+  width: 5%;
+  height: 100%;
+  padding: 0;
+}
+
+a.nav_submenu_button:hover {
+  background-color: #00072D !important;
+  transform: translate(0) !important;
+}
+
+a.nav_submenu_button:active {
+  background-color: white !important;
+}
+
+.nav_submenu_button svg {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.nav_submenu_button img {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 100%;
+  width: 100%;
+}
+
+a#nav_submenu_main {
+  width: 60%;
+  font-family: var(--font-nav-text);
+  font-size: var(--font-size-nav-text);
+  color: var(--color-light-text);
+  display: inline-block;
+  padding: 5px 10px;
+  background-color: var(--color-dark-text);
+  border-radius: 5px;
 }
 
 /* END OF NAVIGATION BAR*/
