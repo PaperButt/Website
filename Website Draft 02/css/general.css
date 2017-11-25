@@ -51,6 +51,8 @@ a {
 }
 
 #right_side {
+  transition: transform 0.3s ease-out;
+  transform: translateY(100px) translateX(-500px);
   float: right;
 }
 
@@ -83,6 +85,7 @@ a#nav_title {
   cursor: pointer;
   transition: transform 0.1s ease 0s;
   margin: 0 0 0 10px;
+  min-width: 350px
 }
 
 ul#nav_buttons {
@@ -144,7 +147,8 @@ a.nav_submenu_button {
 
 a.nav_submenu_button:hover {
   background-color: #00072D !important;
-  transform: translate(0) !important;
+  transform: translateY(-5%) !important;
+  box-shadow: none !important;
 }
 
 a.nav_submenu_button:active {
@@ -194,11 +198,12 @@ a#nav_submenu_main {
 }
 
 h1#page_title {
-  margin: auto;
-  text-align: center;
-  font-size: var(--font-size-title);
-  font-family: var(--font-title);
-  color: var(--color-light-text);
+  margin: auto !important;
+  text-align: center !important;
+  font-size: var(--font-size-title) !important;
+  font-family: var(--font-title) !important;
+  color: var(--color-light-text) !important;
+  margin: auto !important;
 }
 
 #page_title_container h2 {
@@ -243,6 +248,64 @@ p.content_image_subtitle {
   font-family: var(--font-title);
   font-size: var(--font-size-sub-title);
   letter-spacing: 2px;
+}
+
+#main .quote {
+  font-size: var(--font-size-quote);
+  font-style: italic;
+  color: var(--color-descrip-background);
+}
+
+iframe {
+  margin: 20px 0;
+  border-width: 0;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  box-shadow: var(--color-nav-background) 0px 0px 10px;
+}
+
+a#emu_link {
+  text-align: center;
+  display: block;
+  margin: 10px auto;
+  padding: 10px;
+  background-color: var(--color-light-text);
+  border-radius: 5px;
+}
+
+#main h1 {
+  text-align: center;
+  color: var(--color-light-text);
+  font-family: var(--font-title);
+  font-size: var(--font-size-sub-title);
+  padding: 10px 0 0 0;
+}
+
+#emu_link_container {
+  padding: 10px;
+}
+
+#emu_link_container p {
+  font-size: var(--font-size-nav-text);
+}
+
+#lil_links {
+  padding: 20px;
+  list-style: none;
+  text-align: center;
+}
+
+#lil_links li {
+  background-color: var(--color-light-text);
+  display: inline-block;
+  border-radius: 5px;
+}
+
+#lil_links a {
+  font-size: var(--font-size-nav-text);
+  padding: 10px;
+  display: block;
 }
 
 /* End of Main Content Properties*/
