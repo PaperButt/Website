@@ -51,8 +51,6 @@ a {
 }
 
 #right_side {
-  transition: transform 0.3s ease-out;
-  transform: translateY(100px) translateX(-500px);
   float: right;
 }
 
@@ -63,10 +61,11 @@ a {
 
 #nav_ball:hover {
   cursor: pointer;
+  filter: hue-rotate(180deg);
 }
 
-#nav_ball svg {
-  transition: transform 0.3s ease-out;
+#nav_ball img {
+  transition: transform 0.3s ease-in-out;
   transform: scale(1);
 }
 
@@ -291,9 +290,12 @@ a#emu_link {
 }
 
 #lil_links {
+  margin: 50px auto;
   padding: 20px;
   list-style: none;
   text-align: center;
+  border-radius: 10px;
+  background-color: var(--color-descrip-background);
 }
 
 #lil_links li {
@@ -306,6 +308,13 @@ a#emu_link {
   font-size: var(--font-size-nav-text);
   padding: 10px;
   display: block;
+}
+
+.source_reference {
+  margin: 20px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  background-color: var(--color-dark-text);
 }
 
 /* End of Main Content Properties*/

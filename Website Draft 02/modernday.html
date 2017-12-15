@@ -1,0 +1,83 @@
+﻿<!doctype html>
+
+<html lang="en">
+
+<head>
+	<title>Raster Graphics</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="css/root.css">
+	<!-- The CSS for only the home page instead of general.css because of all the transformations and special settings for more "Fancy" Stuff -->
+	<link rel="stylesheet" href="css/general.css">
+	<!-- The fonts.css needs to be loaded for the custom font to be used for the title -->
+	<link rel="stylesheet" href="css/fonts.css">
+	<!-- The jQuery needs to be loaded before the javascript so it is usable inside the javascript.js -->
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<!-- Home Page javascript for all the "fancy" animations -->
+	<script src="js/javascript.js"></script>
+</head>
+
+<body onload="on_load()">
+	<!-- The darkness element is for dimming the whole website down to give focus to the Nav Bar -->
+	<div id="darkness" class="really_fixed"></div>
+	<!-- Start of the Top Navigation Bar that contains the Navigation Menu -->
+	<div id="nav_bar" class="really_fixed">
+		<div id="left_side">
+			<a id="nav_ball">
+			<img src="images/nav_menu_ball_v2.png" height="50px" width="50px">
+	  </a>
+		</div>
+		<div id="right_side">
+			<a id="nav_title" href="#">Modern Day</a>
+			<ul id="nav_buttons">
+				<li id="nav_button1" style="top: -100%"><a href="index.html">Home</a></li>
+				<li id="nav_button2" style="top: -100%">
+					<div id="ourresearch">
+						<a id="nav_submenu_main" href="ourresearch.html" style="float:left">Research</a>
+						<a class="nav_submenu_button" href="sources.html" style="float:right; border-radius: 0px 5px 5px 0px">
+							<img src="images/sources.png">
+						</a>
+						<a class="nav_submenu_button" href="modernday.html" style="float:right; border-radius: 0px 0px 0px 0px">
+							<img src="images/modern.png">
+						</a>
+						<a class="nav_submenu_button" href="inthepast.html" style="float:right; border-radius: 5px 0px 0px 5px">
+							<img src="images/past.png">
+						</a>
+					</div>
+				</li>
+				<li id="nav_button3" style="top: -100%"><a href="about.html">About</a></li>
+				<li id="nav_button4" style="top: -100%"><a href="#">Have a Question?</a></li>
+			</ul>
+		</div>
+	</div>
+	<!-- End of the Top Navigation Bar Element -->
+	<!-- Start of the Main container where all the content (text and pictures) will go -->
+	<div id="main">
+		<div id="content_container" class="wrapped60">
+			<h1>Modern Day</h1>
+			<hr class="wrapped80">
+			<p style="padding-top: 40px">
+				In the modern day, the use of Pixelated Ratser Graphics is for aesthetics purposes
+			</p>
+			<br>
+			<p>
+				Using Nostalgia and Iconic Pixelated character design, video game designers tapped into this craze and produced beatiful games
+			</p>
+			<br>
+			<p>
+				As with black and white photography and indie low-budget movies, this kind of video game art design also uses the feeling of nostalgia in favour of the appeal of the look of the video game
+			</p>
+			<br>
+			<img style="position:relative; left: 50%; transform: translateX(-50%); padding: 50px 0;" width="25%" src="images/Mario.png">
+			<p>
+				Iconic Character Design plays a big role on getting the player caught into the game, the character, since there is few amount of characterization due to the low resolution, couldn’t have too many details so the player could “fill in the blanks” where those details were missing and so getting attached to the character. The player feeling more attached to the character meant that he could even recognise the features (details and colours) even when outside of the game and inviting more talk about it.
+			</p>
+		</div>
+		<!-- End of the Main container -->
+		<!-- Footer (nothing to declare) -->
+		<footer>
+			<p class="wrapped80">Project made by Pedro Pires for Web Development Assignment</p>
+		</footer>
+		<!-- End of the footer -->
+</body>
+
+</html>
